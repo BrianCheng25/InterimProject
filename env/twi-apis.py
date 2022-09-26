@@ -5,9 +5,9 @@ import pandas as pd
 
 # query format and limit
 #query = " #Coronavirus until:2020-03-31 since:2020-01-01" # search by keywords
-query = "(from:joebiden) until:2020-05-31 since:2020-01-01" # search by user
+query = "(from:joebiden) until:2022-08-31 since:2021-01-01" # search by user
 tweets = [] # tweets (var) = list 
-limit = 5000 # tweets limit i wanna get
+limit = 10000 # tweets limit i wanna get
 
 # To get tweet by using sntwitter
 for tweet in sntwitter.TwitterSearchScraper(query).get_items():
